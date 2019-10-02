@@ -1,0 +1,73 @@
+Component Nesting
+	A component can be show inside of another
+
+Component Reusability
+	We want to make components that can be easily reused through out the application
+
+Component Configuration
+	We should be able to configure a component when its created
+
+
+	https://semantic-ui.com/
+
+	https://github.com/marak/Faker.js/
+
+React life cycle events
+https://medium.com/@joshuablankenshipnola/react-component-lifecycle-events-cb77e670a093
+
+Geolocation API
+developer.mozilla.org/en-US/docs/Web/Api/Geolocation_API
+
+
+Creating a Reusable, Configurable Component
+	Identify the jsx that appears to be duplicated
+
+	what is the purpose of that block of jsx? Think of 
+	a descriptive name for what it does.
+
+	Create a new file to house this new component - it should
+	have the same name as the component.
+
+	Create a new component in the new file, past the JSX into it.
+
+	Make the new component configurable by using React's 'props' system.
+
+Props
+	System for passing data from a parent component to a child component
+
+	Goal is to customize or configure a child component
+
+Functional vs Class Components
+	Functional - Good for simple content
+	Class - Good for just about everything else ...
+
+Benefits of...
+Class Components
+	Easier Code Organization
+	Can use 'State' (another react system)
+		Easier to handle user input
+	Understands lifecycle events
+		Easier to do things when the app first starts
+
+
+Constructor - Good place to do one-time setup
+Render - Avoid doing anything besides returning JSX
+
+	content visible on screen
+
+ComponentDidMount - Good place to do data-loading
+	
+	Sit and wait for updates
+
+ComponentDidUpdate - Good place to do more data-loading when state/props change
+
+	Sit and wait until this component is no longer shown
+
+ComponentWillUnmount - Good place to do cleanup (especially for non-react stuff)
+
+Northern Hemisphere
+
+0,1,2,[3,4,5,6,7,8],9,10,11
+
+Southern Hemisphere
+[0,1,2],3,4,5,6,7,8,[9,10,11]
